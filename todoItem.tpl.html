@@ -1,0 +1,9 @@
+<div class="input-group">
+  <span class="input-group-addon">
+    <input type="checkbox" ng-model="todo.completed" ng-click="update()">
+  </span>
+  <input type="text" class="form-control" ng-model="todo.title" ng-blur="update()">
+  <span class="input-group-btn">
+    <button class="btn btn-danger" ng-click="remove(todo)" type="button">삭제</button>
+  </span>
+</div>
